@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>Expense Tracker</h2>
+</header>
+
+<section class="dashboard">
+  <div class="card income">Income: ₹<span id="income">0</span></div>
+  <div class="card expense">Expense: ₹<span id="expense">0</span></div>
+  <div class="card balance">Balance: ₹<span id="balance">0</span></div>
+</section>
+
+<section class="form">
+  <input type="text" id="title" placeholder="Expense Title">
+  <input type="number" id="amount" placeholder="Amount">
+  <select id="type">
+    <option value="income">Income</option>
+    <option value="expense">Expense</option>
+  </select>
+  <button onclick="addTransaction()">Add</button>
+</section>
+
+<section class="list" id="list"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
